@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Usuario Nuevo</title>
+  <title>Cliente Nuevo</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
     </script>
@@ -36,28 +36,27 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Usuario Nuevo</h1>
+      <h1>Cliente Nuevo</h1>
       <div class="herramientas">
         <a href="usuarios.html">
           Cancelar</a>
         <button type="submit">
-          Guardar
+          Registrar
         </button>
       </div>
     </header>
     <p>
       <label>
-        Cue
+        Nombre
         <input name="cue"
-          type="email" required>
+          type="string" required>
       </label>
     </p>
     <p>
       <label>
-        Avatar
-        <input name="avatar"
-          type="file" required
-          accept=".png,.jpg,.jpeg,.gif">
+        Mail
+        <input name="cue"
+          type="email" required>
       </label>
     </p>
     <!--
@@ -65,7 +64,7 @@
     -->
     <p>
       <label>
-        Pasatiempo
+        Servicio
         <select
           name="pasatiempoId">
           <option>
@@ -79,7 +78,7 @@
       muchos.
     -->
     <fieldset>
-      <legend>Roles</legend>
+      <legend>Tipo</legend>
       <ul id="listaRoles"
         class="checks">
         <li>
